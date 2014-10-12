@@ -32,6 +32,6 @@ if (!file.exists('power-plotdata.csv')) {
   # Save file
   write.csv(PowerPlotdata, file='power-plotdata.csv',row.names=FALSE)
 } else {
-  PowerPlotdata <- read.csv('power-plotdata.csv')
+  PowerPlotdata <- read.csv('power-plotdata.csv'); PowerPlotdata$Date <- dmy(PowerPlotdata$Date)
 }
 

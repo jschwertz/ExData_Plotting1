@@ -1,4 +1,4 @@
-# Load data
+# Load data changed line
 source('scripts/ReadData.R')
 
 # Open png device
